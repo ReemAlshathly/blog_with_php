@@ -125,9 +125,21 @@ while($row = mysqli_fetch_assoc($result)) { ?>
                         <div class="row">
                           <div class="col-lg-12">
                             <ul class="post-tags">
-                              <li><i class="fa fa-share-alt"></i></li>
-                              <li><a href="#">Facebook</a>,</li>
-                              <li><a href="#">Twitter</a></li>
+                              <li><i style="font-size:30px" class="fa fa-share-alt"></i></li>
+                              <?php
+                              $baseurl="http://localhost:7882/blogs/";
+                             $short=$row['short_title'];
+                             $long=$row["long_title"];
+                             $post=$row["text"];
+                              
+                              ?>
+                              <li><a target="_blank" href="http://www.facebook.com/share.php?u=<?php echo $baseurl.$long;?>"><i  style="font-size:30px;margin-left:20px" class="fa fa-facebook"></i></a></li>
+                              <li><a target="_blank" href="http://www.twitter.com/share?text=<?php echo $long;?>
+                            $url=<?php echo $baseurl.$short ;?> &hashtages=<?php echo  $short; ?>"><i style="font-size:30px;margin-left:20px" class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php echo $baseurl.$long;?>"
+                           ><i style="font-size:30px;margin-left:20px" class="fa fa-linkedin"></i></a>
+                            </li>
                             </ul>
                           </div>
                          

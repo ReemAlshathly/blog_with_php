@@ -105,11 +105,11 @@ if (isset($_REQUEST['username'])){
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
 	$trn_date = date("Y-m-d H:i:s");
-  $post_img =$_FILES['post-img']['name'];
-  $temp_name =$_FILES['post-img']['tmp_name'];
-  move_uploaded_file($temp_name,"images/".$post_img);
-        $query = "INSERT into `postes` (short_title, long_title, text,	Date,	imge)
-VALUES ('$username', '$email', '$password','$trn_date','$post_img')";
+  // $post_img =$_FILES['post-img']['name'];
+  // $temp_name =$_FILES['post-img']['tmp_name'];
+  // move_uploaded_file($temp_name,"images/".$post_img);
+        $query = "INSERT into `postes` (short_title, long_title, text,	Date)
+VALUES ('$username', '$email', '$password','$trn_date')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='form'>
