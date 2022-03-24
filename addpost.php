@@ -213,6 +213,9 @@ VALUES ('$username', '$email', '$password','$trn_date')";
                             <!-- <fieldset>
                               <input type="file" name="post-img" placeholder="add imge">
                             </fieldset> -->
+
+
+                            
                           </div>
                           <div class="col-md-6 col-sm-12">
                             <fieldset>
