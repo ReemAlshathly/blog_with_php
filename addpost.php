@@ -146,9 +146,9 @@ VALUES ('$username', '$email', '$password','$trn_date')";
                             </fieldset>
                           </div>
                           <div class="col-md-12 col-sm-12">
-                            <fieldset>
+                            <!-- <fieldset>
                               <input type="file" name="post-img" placeholder="add imge">
-                            </fieldset>
+                            </fieldset> -->
                           </div>
                           <div class="col-md-6 col-sm-12">
                             <fieldset>
@@ -210,9 +210,9 @@ VALUES ('$username', '$email', '$password','$trn_date')";
                             </fieldset>
                           </div>
                           <div class="col-md-12 col-sm-12">
-                            <fieldset>
+                            <!-- <fieldset>
                               <input type="file" name="post-img" placeholder="add imge">
-                            </fieldset>
+                            </fieldset> -->
                           </div>
                           <div class="col-md-6 col-sm-12">
                             <fieldset>
