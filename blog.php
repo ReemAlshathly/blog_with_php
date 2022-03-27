@@ -133,8 +133,8 @@ while($row = mysqli_fetch_assoc($result)) { ?>
                              $post=$row["text"];
                               
                               ?>
-                              <li><a target="_blank" href="http://www.facebook.com/share.php?u=<?php echo $baseurl.$long;?>"><i  style="font-size:30px;margin-left:20px" class="fa fa-facebook"></i></a></li>
-                              <li><a target="_blank" href="http://www.twitter.com/share?text=<?php echo $long;?>
+                              <li><a target="_blank" href="http://www.facebook.com/share.php?u=<?php echo $baseurl.$post;?>"><i  style="font-size:30px;margin-left:20px" class="fa fa-facebook"></i></a></li>
+                              <li><a target="_blank" href="http://www.twitter.com/share?text=<?php echo $post;?>
                             $url=<?php echo $baseurl.$short ;?> &hashtages=<?php echo  $short; ?>"><i style="font-size:30px;margin-left:20px" class="fa fa-twitter"></i></a>
                             </li>
                             <li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php echo $baseurl.$long;?>"
